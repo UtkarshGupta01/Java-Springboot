@@ -4,11 +4,15 @@ abstract class Animal {
   String name;
 
   abstract public String animal();
+
+  Animal() {
+    System.out.println("You are creating a animal");
+  }
 }
 
 class Lion extends Animal {
   public void printName() {
-    System.out.println(this.name);
+    System.out.println("Name of Animal : " + this.name);
   }
 
   public String animal() { // Must define after defining abstract functions
