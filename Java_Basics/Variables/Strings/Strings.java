@@ -22,6 +22,11 @@ public class Strings {
     // substring
     System.out.println(fname.substring(3, 7));
 
+    // As String is immutable ,we can use StringBuilder:
+    StringBuilder introduction = new StringBuilder("My name is Utkarsh Gupta.\t");
+    introduction.append("I was born in 2002.");
+    System.out.println(introduction.toString());
+
   }
 
 }
