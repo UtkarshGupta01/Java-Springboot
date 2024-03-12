@@ -9,7 +9,9 @@ public class TryCatch {
     } catch (Exception exception) {
 
       // Do something after catching error
-      System.out.println(arr[3]);
+      System.out.println("Message : " + exception.getMessage());
+    } finally {
+      System.out.println("This block will execute whether there is an exception or not!");
     }
 
     System.out.println("Error Handled :)");
