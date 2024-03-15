@@ -200,3 +200,31 @@
 // }
 
 // ===================================================================================
+
+// Fabonacci Series
+
+import java.util.Scanner;
+
+public class Page1 {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter a number to which you want fabonacci Series : ");
+    int num = input.nextInt();
+    fabonacci(num);
+    input.close();
+  }
+
+  static void fabonacci(int n) {
+    int a = 0;
+    int b = 1;
+    int temp = 0;
+
+    System.out.print(a + " " + b + " ");
+    while (a + b <= n) {
+      temp = b;
+      b = a + b;
+      a = temp;
+      System.out.print(b + " ");
+    }
+  }
+}
