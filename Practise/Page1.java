@@ -137,64 +137,66 @@
 
 // import java.util.Scanner;
 // public class Page1 {
-//   public static void main(String[] args) {
-//     Scanner input = new Scanner(System.in);
-//     System.out.print("Enter a number to check whether its armstrong number or not : ");
-//     int num = input.nextInt();
-//     if (armstrongChecker(num)) {
-//       System.out.println("It's an armstrong number");
-//     } else {
-//       System.out.println("It's not an armstrong number");
-//     }
-//     input.close();
-//   }
-//   static boolean armstrongChecker(int n) {
-//     int sum = 0;
-//     int originalNum = n;
-//     while (n != 0) {
-//       int remainder = n % 10;
-//       sum += (int) Math.pow(remainder, 3);
-//       n = n / 10;
-//     }
-//     if (originalNum == sum) {
-//       return true;
-//     } else {
-//       return false;
-//     }
-//   }
+// public static void main(String[] args) {
+// Scanner input = new Scanner(System.in);
+// System.out.print("Enter a number to check whether its armstrong number or not
+// : ");
+// int num = input.nextInt();
+// if (armstrongChecker(num)) {
+// System.out.println("It's an armstrong number");
+// } else {
+// System.out.println("It's not an armstrong number");
+// }
+// input.close();
+// }
+// static boolean armstrongChecker(int n) {
+// int sum = 0;
+// int originalNum = n;
+// while (n != 0) {
+// int remainder = n % 10;
+// sum += (int) Math.pow(remainder, 3);
+// n = n / 10;
+// }
+// if (originalNum == sum) {
+// return true;
+// } else {
+// return false;
+// }
+// }
 // }
 
-//==================================================================================
+// ==================================================================================
 
 // Palindrome
 
-import java.util.Scanner;
+// import java.util.Scanner;
+// public class Page1 {
+// public static void main(String[] args) {
+// Scanner input = new Scanner(System.in);
+// System.out.print("Enter a number to check whether its Palindrome or not : ");
+// int num = input.nextInt();
+// if (palindromeChecker(num)) {
+// System.out.println("It's a Palindrome");
+// } else {
+// System.out.println("It's not a Palindrome");
+// }
+// input.close();
+// }
 
-public class Page1 {
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    System.out.print("Enter a number to check whether its Palindrome or not : ");
-    int num = input.nextInt();
-    if (palindromeChecker(num)) {
-      System.out.println("It's a Palindrome");
-    } else {
-      System.out.println("It's not a Palindrome");
-    }
-    input.close();
-  }
+// static boolean palindromeChecker(int n) {
+// int reverse = 0;
+// int originalNum = n;
+// while (n != 0) {
+// int remainder = n % 10;
+// reverse = (reverse * 10) + remainder;
+// n = n / 10;
+// }
+// if (originalNum == reverse) {
+// return true;
+// } else {
+// return false;
+// }
+// }
+// }
 
-  static boolean palindromeChecker(int n) {
-    int reverse = 0;
-    int originalNum = n;
-    while (n != 0) {
-      int remainder = n % 10;
-      reverse = (reverse * 10) + remainder;
-      n = n / 10;
-    }
-    if (originalNum == reverse) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-}
+// ===================================================================================
