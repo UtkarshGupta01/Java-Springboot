@@ -102,31 +102,66 @@
 
 // Prime Number Or not
 
+// import java.util.Scanner;
+
+// public class Page1 {
+// public static void main(String[] args) {
+// Scanner input = new Scanner(System.in);
+// System.out.print("Enter a number to check whether its prime or not : ");
+// int num = input.nextInt();
+// if (primeCheck(num)) {
+// System.out.println("It is a prime number.");
+// } else {
+// System.out.println("it is not a prime number. ");
+// }
+// input.close();
+
+// }
+
+// static boolean primeCheck(int n) {
+// for (int i = 2; i < n; i++) {
+// if (n % i == 0) {
+// return false;
+// }
+
+// }
+// return true;
+
+// }
+
+// }
+
+// ==========================================================================
+
+// Armstrong Number
+
 import java.util.Scanner;
 
 public class Page1 {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    System.out.print("Enter a number to check whether its prime or not : ");
+    System.out.print("Enter a number to check whether its armstrong number or not : ");
     int num = input.nextInt();
-    if (primeCheck(num)) {
-      System.out.println("It is a prime number.");
+    if (armstrongChecker(num)) {
+      System.out.println("It's an armstrong number");
     } else {
-      System.out.println("it is not a prime number. ");
+      System.out.println("It's not an armstrong number");
     }
     input.close();
-
   }
 
-  static boolean primeCheck(int n) {
-    for (int i = 2; i < n; i++) {
-      if (n % i == 0) {
-        return false;
-      }
-
+  static boolean armstrongChecker(int n) {
+    int sum = 0;
+    int originalNum = n;
+    while (n != 0) {
+      int remainder = n % 10;
+      sum += (int) Math.pow(remainder, 3);
+      n = n / 10;
     }
-    return true;
-
+    if (originalNum == sum) {
+      return true;
+    } else {
+      return false;
+    }
   }
-
 }
