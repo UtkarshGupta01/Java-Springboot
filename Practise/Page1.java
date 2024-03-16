@@ -266,52 +266,73 @@
 // import java.util.Scanner;
 
 // public class Page1 {
-//   public static void main(String[] args) {
-//     Scanner input = new Scanner(System.in);
-//     System.out.print("Enter the length of pattern : ");
-//     int num = input.nextInt();
-//     pattern(num);
-//     input.close();
-//   }
+// public static void main(String[] args) {
+// Scanner input = new Scanner(System.in);
+// System.out.print("Enter the length of pattern : ");
+// int num = input.nextInt();
+// pattern(num);
+// input.close();
+// }
 
-//   static void pattern(int n) {
-//     for (int i = n; i >= 1; i--) {
-//       for (int j = 1; j <= i; j++) {
-//         System.out.print("*");
-//       }
-//       System.out.println("");
-//     }
+// static void pattern(int n) {
+// for (int i = n; i >= 1; i--) {
+// for (int j = 1; j <= i; j++) {
+// System.out.print("*");
+// }
+// System.out.println("");
+// }
 
-//   }
+// }
 // }
 
 // -------------------------
 
-//   *
-//  **
+// *
+// **
 // ***
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class Page1 {
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    System.out.print("Enter the length of pattern : ");
-    int num = input.nextInt();
-    pattern(num);
-    input.close();
-  }
+// public class Page1 {
+// public static void main(String[] args) {
+// Scanner input = new Scanner(System.in);
+// System.out.print("Enter the length of pattern : ");
+// int num = input.nextInt();
+// pattern(num);
+// input.close();
+// }
 
-  static void pattern(int n) {
-    for (int i = 1; i <= n; i++) {
-      for (int k = 0; k < n - i; k++) {
-        System.out.print(" ");
-      }
-      for (int j = 1; j <= i; j++) {
-        System.out.print("*");
-      }
-      System.out.println();
-    }
+// static void pattern(int n) {
+// for (int i = 1; i <= n; i++) {
+// for (int k = 0; k < n - i; k++) {
+// System.out.print(" ");
+// }
+// for (int j = 1; j <= i; j++) {
+// System.out.print("*");
+// }
+// System.out.println();
+// }
 
-  }
-}
+// }
+// }
+
+// ===================================================================
+
+// Sum and average of all elements in an array
+
+// public class Page2 {
+// public static void main(String[] args) {
+// int[] arr = { 21, 3, 2, 12, 12, 7 };
+// int sum = 0;
+// for (int i : arr) {
+// sum += i;
+// }
+// double avg = (double) sum / arr.length;
+// System.out.println("Sum of all elements in an array : " + sum);
+// System.out.println("Average of all elements in an array : " + avg);
+// }
+// }
+
+// ========================================================================
+
+//
