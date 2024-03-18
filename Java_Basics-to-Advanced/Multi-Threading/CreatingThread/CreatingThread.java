@@ -3,7 +3,8 @@
 class MyThread1 extends Thread {
   public void run() {
     for (int i = 0; i < 1000; i++) {
-      System.out.println("Hello! Thread 1 here!");
+      System.out.printf("Hello, I am " + Thread.currentThread().getName());
+      System.out.println("# " + i);
     }
   }
 }
@@ -11,7 +12,8 @@ class MyThread1 extends Thread {
 class MyThread2 extends Thread {
   public void run() {
     for (int i = 0; i < 1000; i++) {
-      System.out.println("Hi! Thread 2 here!");
+      System.out.printf("Hello, I  am " + Thread.currentThread().getName());
+      System.out.println("* " + i);
     }
   }
 }
@@ -19,7 +21,8 @@ class MyThread2 extends Thread {
 class MyThread3 extends Thread {
   public void run() {
     for (int i = 0; i < 1000; i++) {
-      System.out.println("Hey! Thread 3 here!");
+      System.out.printf("Hello, I am " + Thread.currentThread().getName());
+      System.out.println("! " + i);
     }
   }
 }
