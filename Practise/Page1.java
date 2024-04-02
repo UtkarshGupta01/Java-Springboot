@@ -392,27 +392,54 @@
 
 // ==============================================================================
 
-//reverse an array
+// //reverse an array
+// public class Page1 {
+//   public static void main(String[] args) {
+//     int[] arr = { -1, 32, 12, 3, 4 };
+//     int start = 0;
+//     int end = arr.length - 1;
+//     int temp;
+//     System.out.println(start + "" + end);
+//     do {
+//       temp = arr[start];
+//       arr[start] = arr[end];
+//       arr[end] = temp;
+//       start++;
+//       end--;
+
+//     } while (start < end);
+
+//     for (int i : arr) {
+//       System.out.print(" " + i);
+
+//     }
+//   }
+// }
+
+//===============================================================================
+
+//array palindrome
+
+import java.util.Arrays;
 
 public class Page1 {
+
   public static void main(String[] args) {
-    int[] arr = { -1, 32, 12, 3, 4 };
-    int start = 0;
-    int end = arr.length - 1;
-    int temp;
-    System.out.println(start + "" + end);
-    do {
-      temp = arr[start];
-      arr[start] = arr[end];
-      arr[end] = temp;
-      start++;
-      end--;
+    int[] a_arr = { 1, 2, 3, 2, 1 };
+    int i = a_arr.length - 1;
+    int[] b_arr = new int[a_arr.length];
+    int j = 0;
 
-    } while (start < end);
+    while (j < b_arr.length) {
+      b_arr[j] = a_arr[i];
+      i--;
+      j++;
+    }
 
-    for (int i : arr) {
-      System.out.print(" " + i);
-
+    if (Arrays.equals(a_arr, b_arr)) {
+      System.out.println("It's a Palindrome");
+    } else {
+      System.out.println("It's not a palindrone");
     }
   }
 }
