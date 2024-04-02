@@ -335,4 +335,59 @@
 
 // ========================================================================
 
-//
+// number of occurrences in a array
+
+// import java.util.*;
+// public class Page1 {
+// public static void main(String[] args) {
+// int[] arr = new int[10];
+// Scanner input = new Scanner(System.in);
+// System.out.println("Enter any 10 numbers in arrays");
+// for (int i = 0; i < arr.length; i++) {
+// arr[i] = input.nextInt();
+// }
+// System.out.println();
+// System.out.print("Enter the element you want to count : ");
+// int ele = input.nextInt();
+// int count = 0;
+// for (int i : arr) {
+// if (i == ele) {
+// count++;
+// } else {
+// continue;
+// }
+// }
+// if (count > 0) {
+// System.out.println("Number of occurrences in array : " + count);
+// } else {
+// System.out.println("element not present");
+// }
+// }
+// }
+
+// =============================================================================
+
+// sorted array
+
+// public class Page1 {
+// public static void main(String[] args) {
+// int[] arr = { 1, 21, 3, 141, 511, 911 };
+// int count = 0;
+// for (int i = 0; i < arr.length - 1; i++) {
+// int temp = arr[i];
+// if (temp < arr[i + 1]) {
+// count++;
+// continue;
+// } else {
+// break;
+// }
+// }
+// if (count == arr.length - 1) {
+// System.out.println("sorted");
+// } else {
+// System.out.println("Not sorted");
+// }
+// }
+// }
+
+// ==============================================================================
