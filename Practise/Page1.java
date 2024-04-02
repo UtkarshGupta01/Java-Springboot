@@ -420,26 +420,62 @@
 
 //array palindrome
 
-import java.util.Arrays;
+// import java.util.Arrays;
+// public class Page1 {
+//   public static void main(String[] args) {
+//     int[] a_arr = { 1, 2, 3, 2, 1 };
+//     int i = a_arr.length - 1;
+//     int[] b_arr = new int[a_arr.length];
+//     int j = 0;
+
+//     while (j < b_arr.length) {
+//       b_arr[j] = a_arr[i];
+//       i--;
+//       j++;
+//     }
+
+//     if (Arrays.equals(a_arr, b_arr)) {
+//       System.out.println("It's a Palindrome");
+//     } else {
+//       System.out.println("It's not a palindrone");
+//     }
+//   }
+// }
+
+//===========================================================================
+
+// Merge two sorted arrays
 
 public class Page1 {
-
   public static void main(String[] args) {
-    int[] a_arr = { 1, 2, 3, 2, 1 };
-    int i = a_arr.length - 1;
-    int[] b_arr = new int[a_arr.length];
+    int a[] = { 2, 4, 7, 8, 56 };
+    int b[] = { 12, 24, 34, 42, 73 };
+    int c[] = new int[a.length + b.length];
+    int i = 0;
     int j = 0;
-
-    while (j < b_arr.length) {
-      b_arr[j] = a_arr[i];
-      i--;
-      j++;
+    int k = 0;
+    while (i < a.length && j < b.length) {
+      if (a[i] < b[j]) {
+        c[k] = a[i];
+        i++;
+      } else {
+        c[k] = b[j];
+        j++;
+      }
+      k++;
     }
-
-    if (Arrays.equals(a_arr, b_arr)) {
-      System.out.println("It's a Palindrome");
-    } else {
-      System.out.println("It's not a palindrone");
+    while (i < a.length) {
+      c[k] = a[i];
+      i++;
+      k++;
+    }
+    while (j < b.length) {
+      c[k] = b[j];
+      j++;
+      k++;
+    }
+    for (int x : c) {
+      System.out.print(x + " ");
     }
   }
 }
