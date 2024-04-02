@@ -394,122 +394,124 @@
 
 // //reverse an array
 // public class Page1 {
-//   public static void main(String[] args) {
-//     int[] arr = { -1, 32, 12, 3, 4 };
-//     int start = 0;
-//     int end = arr.length - 1;
-//     int temp;
-//     System.out.println(start + "" + end);
-//     do {
-//       temp = arr[start];
-//       arr[start] = arr[end];
-//       arr[end] = temp;
-//       start++;
-//       end--;
+// public static void main(String[] args) {
+// int[] arr = { -1, 32, 12, 3, 4 };
+// int start = 0;
+// int end = arr.length - 1;
+// int temp;
+// System.out.println(start + "" + end);
+// do {
+// temp = arr[start];
+// arr[start] = arr[end];
+// arr[end] = temp;
+// start++;
+// end--;
 
-//     } while (start < end);
+// } while (start < end);
 
-//     for (int i : arr) {
-//       System.out.print(" " + i);
+// for (int i : arr) {
+// System.out.print(" " + i);
 
-//     }
-//   }
+// }
+// }
 // }
 
-//===============================================================================
+// ===============================================================================
 
-//array palindrome
+// array palindrome
 
 // import java.util.Arrays;
 // public class Page1 {
-//   public static void main(String[] args) {
-//     int[] a_arr = { 1, 2, 3, 2, 1 };
-//     int i = a_arr.length - 1;
-//     int[] b_arr = new int[a_arr.length];
-//     int j = 0;
+// public static void main(String[] args) {
+// int[] a_arr = { 1, 2, 3, 2, 1 };
+// int i = a_arr.length - 1;
+// int[] b_arr = new int[a_arr.length];
+// int j = 0;
 
-//     while (j < b_arr.length) {
-//       b_arr[j] = a_arr[i];
-//       i--;
-//       j++;
-//     }
-
-//     if (Arrays.equals(a_arr, b_arr)) {
-//       System.out.println("It's a Palindrome");
-//     } else {
-//       System.out.println("It's not a palindrone");
-//     }
-//   }
+// while (j < b_arr.length) {
+// b_arr[j] = a_arr[i];
+// i--;
+// j++;
 // }
 
-//===========================================================================
+// if (Arrays.equals(a_arr, b_arr)) {
+// System.out.println("It's a Palindrome");
+// } else {
+// System.out.println("It's not a palindrone");
+// }
+// }
+// }
+
+// ===========================================================================
 
 // Merge two sorted arrays
 
 // public class Page1 {
-//   public static void main(String[] args) {
-//     int a[] = { 2, 4, 7, 8, 56 };
-//     int b[] = { 12, 24, 34, 42, 73 };
-//     int c[] = new int[a.length + b.length];
-//     int i = 0;
-//     int j = 0;
-//     int k = 0;
-//     while (i < a.length && j < b.length) {
-//       if (a[i] < b[j]) {
-//         c[k] = a[i];
-//         i++;
-//       } else {
-//         c[k] = b[j];
-//         j++;
-//       }
-//       k++;
-//     }
-//     while (i < a.length) {
-//       c[k] = a[i];
-//       i++;
-//       k++;
-//     }
-//     while (j < b.length) {
-//       c[k] = b[j];
-//       j++;
-//       k++;
-//     }
-//     for (int x : c) {
-//       System.out.print(x + " ");
-//     }
-//   }
+// public static void main(String[] args) {
+// int a[] = { 2, 4, 7, 8, 56 };
+// int b[] = { 12, 24, 34, 42, 73 };
+// int c[] = new int[a.length + b.length];
+// int i = 0;
+// int j = 0;
+// int k = 0;
+// while (i < a.length && j < b.length) {
+// if (a[i] < b[j]) {
+// c[k] = a[i];
+// i++;
+// } else {
+// c[k] = b[j];
+// j++;
+// }
+// k++;
+// }
+// while (i < a.length) {
+// c[k] = a[i];
+// i++;
+// k++;
+// }
+// while (j < b.length) {
+// c[k] = b[j];
+// j++;
+// k++;
+// }
+// for (int x : c) {
+// System.out.print(x + " ");
+// }
+// }
 // }
 
-//==============================================================================
+// ==============================================================================
 
-//search element in 2d array
+// search element in 2d array
 
-public class Page1 {
+// public class Page1 {
+// public static void main(String[] args) {
+// int arr[][] = { { 12, 32, 312, 3 }, { 65, 213, 2, 678 } };
+// int ans[] = new int[2];
+// int target = 213;
+// boolean found = false;
+// for (int i = 0; i < arr.length; i++) {
+// for (int j = 0; j < arr[i].length; j++) {
+// if (arr[i][j] == target) {
+// ans[0] = i;
+// ans[1] = j;
+// found = true;
+// break;
+// }
+// }
+// if (found) { // Exit the outer loop if the target element is found
+// break;
+// }
+// }
+// if (found) {
+// System.out.println("Element is present at position " + ans[0] + ", " +
+// ans[1]);
+// } else {
+// System.out.println("Element is not present in the array");
+// }
+// }
+// }
 
-  public static void main(String[] args) {
-    int arr[][] = { { 12, 32, 312, 3 }, { 65, 213, 2, 678 } };
-    int ans[] = new int[2];
-    int target = 213;
-    boolean found = false; // Flag to track if the target element is found
+// ====================================================================================
 
-    for (int i = 0; i < arr.length; i++) {
-      for (int j = 0; j < arr[i].length; j++) {
-        if (arr[i][j] == target) {
-          ans[0] = i;
-          ans[1] = j;
-          found = true;
-          break;
-        }
-      }
-      if (found) { // Exit the outer loop if the target element is found
-        break;
-      }
-    }
-
-    if (found) {
-      System.out.println("Element is present at position " + ans[0] + ", " + ans[1]);
-    } else {
-      System.out.println("Element is not present in the array");
-    }
-  }
-}
+//
