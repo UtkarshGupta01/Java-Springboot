@@ -446,36 +446,70 @@
 
 // Merge two sorted arrays
 
+// public class Page1 {
+//   public static void main(String[] args) {
+//     int a[] = { 2, 4, 7, 8, 56 };
+//     int b[] = { 12, 24, 34, 42, 73 };
+//     int c[] = new int[a.length + b.length];
+//     int i = 0;
+//     int j = 0;
+//     int k = 0;
+//     while (i < a.length && j < b.length) {
+//       if (a[i] < b[j]) {
+//         c[k] = a[i];
+//         i++;
+//       } else {
+//         c[k] = b[j];
+//         j++;
+//       }
+//       k++;
+//     }
+//     while (i < a.length) {
+//       c[k] = a[i];
+//       i++;
+//       k++;
+//     }
+//     while (j < b.length) {
+//       c[k] = b[j];
+//       j++;
+//       k++;
+//     }
+//     for (int x : c) {
+//       System.out.print(x + " ");
+//     }
+//   }
+// }
+
+//==============================================================================
+
+//search element in 2d array
+
 public class Page1 {
+
   public static void main(String[] args) {
-    int a[] = { 2, 4, 7, 8, 56 };
-    int b[] = { 12, 24, 34, 42, 73 };
-    int c[] = new int[a.length + b.length];
-    int i = 0;
-    int j = 0;
-    int k = 0;
-    while (i < a.length && j < b.length) {
-      if (a[i] < b[j]) {
-        c[k] = a[i];
-        i++;
-      } else {
-        c[k] = b[j];
-        j++;
+    int arr[][] = { { 12, 32, 312, 3 }, { 65, 213, 2, 678 } };
+    int ans[] = new int[2];
+    int target = 213;
+    boolean found = false; // Flag to track if the target element is found
+
+    for (int i = 0; i < arr.length; i++) {
+      for (int j = 0; j < arr[i].length; j++) {
+        if (arr[i][j] == target) {
+          ans[0] = i;
+          ans[1] = j;
+          found = true;
+          break;
+        }
       }
-      k++;
+      if (found) { // Exit the outer loop if the target element is found
+        break;
+      }
     }
-    while (i < a.length) {
-      c[k] = a[i];
-      i++;
-      k++;
-    }
-    while (j < b.length) {
-      c[k] = b[j];
-      j++;
-      k++;
-    }
-    for (int x : c) {
-      System.out.print(x + " ");
+
+    if (found) {
+      System.out.println("Element is present at position " + ans[0] + ", " + ans[1]);
+    } else {
+      System.out.println("Element is not present in the array");
     }
   }
 }
