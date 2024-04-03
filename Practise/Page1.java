@@ -516,21 +516,38 @@
 
 //sum and average of all elements in 2d array
 
+// public class Page1 {
+
+//   public static void main(String[] args) {
+//     int a[][] = { { 2, 3, 4, 1 }, { 1, 2, 3, 4 } };
+//     int sum = 0;
+//     int count = 0;
+//     for (int i = 0; i < a.length; i++) {
+//       for (int j = 0; j < a[i].length; j++) {
+//         sum += a[i][j];
+//         count++;
+//       }
+//     }
+//     double avg = (double) sum / count;
+//     System.out.printf("Sum : %d ; Average : %.2f", sum, avg);
+
+//   }
+// }
+
+//=========================================================================
+
+// sum of 2 diagonal elements
+
 public class Page1 {
 
   public static void main(String[] args) {
-    int a[][] = { { 2, 3, 4, 1 }, { 1, 2, 3, 4 } };
+    int a[][] = { { 11, 23 }, { 10, 21 } };
     int sum = 0;
-    int count = 0;
 
     for (int i = 0; i < a.length; i++) {
-      for (int j = 0; j < a[i].length; j++) {
-        sum += a[i][j];
-        count++;
-      }
+      int j = i;
+      sum += a[i][j];
     }
-    double avg = (double) sum / count;
-    System.out.printf("Sum : %d ; Average : %.2f", sum, avg);
-
+    System.out.printf("Sum of Two diagonal elements : %d", sum);
   }
 }
