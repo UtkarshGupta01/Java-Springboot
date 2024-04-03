@@ -514,40 +514,60 @@
 
 // ====================================================================================
 
-//sum and average of all elements in 2d array
+// sum and average of all elements in 2d array
 
 // public class Page1 {
 
-//   public static void main(String[] args) {
-//     int a[][] = { { 2, 3, 4, 1 }, { 1, 2, 3, 4 } };
-//     int sum = 0;
-//     int count = 0;
-//     for (int i = 0; i < a.length; i++) {
-//       for (int j = 0; j < a[i].length; j++) {
-//         sum += a[i][j];
-//         count++;
-//       }
-//     }
-//     double avg = (double) sum / count;
-//     System.out.printf("Sum : %d ; Average : %.2f", sum, avg);
+// public static void main(String[] args) {
+// int a[][] = { { 2, 3, 4, 1 }, { 1, 2, 3, 4 } };
+// int sum = 0;
+// int count = 0;
+// for (int i = 0; i < a.length; i++) {
+// for (int j = 0; j < a[i].length; j++) {
+// sum += a[i][j];
+// count++;
+// }
+// }
+// double avg = (double) sum / count;
+// System.out.printf("Sum : %d ; Average : %.2f", sum, avg);
 
-//   }
+// }
 // }
 
-//=========================================================================
+// =========================================================================
 
 // sum of 2 diagonal elements
+// public class Page1 {
+
+// public static void main(String[] args) {
+// int a[][] = { { 11, 23 }, { 10, 21 } };
+// int sum = 0;
+
+// for (int i = 0; i < a.length; i++) {
+// int j = i;
+// sum += a[i][j];
+// }
+// System.out.printf("Sum of Two diagonal elements : %d", sum);
+// }
+// }
+
+// ==================================================================
+
+// Maximum and minimum in an array
+
+import java.util.*;
 
 public class Page1 {
-
   public static void main(String[] args) {
-    int a[][] = { { 11, 23 }, { 10, 21 } };
-    int sum = 0;
-
-    for (int i = 0; i < a.length; i++) {
-      int j = i;
-      sum += a[i][j];
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter the size of an array : ");
+    int arrSize = input.nextInt();
+    int arr[] = new int[arrSize];
+    System.out.print("Enter elements of array : ");
+    for (int i = 0; i < arr.length; i++) {
+      arr[i] = input.nextInt();
     }
-    System.out.printf("Sum of Two diagonal elements : %d", sum);
+    Arrays.sort(arr);
+    System.out.printf("Minimum element : %d and Maximum element : %d", arr[0], arr[arr.length - 1]);
   }
 }
