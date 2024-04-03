@@ -573,3 +573,47 @@
 // }
 
 // ===============================================================================
+
+// delete element from array
+
+// import java.util.*;
+
+// public class Page1 {
+// public static void main(String[] args) {
+// int arr[] = { 23, 1, 231, 273, 203, 776, 567 };
+// Scanner input = new Scanner(System.in);
+// System.out.println("Following elements in given array : ");
+// for (int i : arr) {
+// System.out.print(i + " ");
+// }
+// System.out.println();
+// System.out.print("Enter element you want to delete : ");
+// int target = input.nextInt();
+// List<Integer> li = new ArrayList<>();
+
+// // Copy elements to ArrayList, excluding the target element
+// for (int i : arr) {
+// if (i != target) {
+// li.add(i);
+// }
+// }
+
+// if (li.size() != arr.length) {
+// // Convert ArrayList back to array
+// arr = new int[li.size()];
+// for (int i = 0; i < li.size(); i++) {
+// arr[i] = li.get(i);
+// }
+
+// System.out.println("Element " + target + " removed.");
+// System.out.println("Updated array:");
+// for (int i : arr) {
+// System.out.print(i + " ");
+// }
+// } else {
+// System.out.println("Element not present");
+// }
+// }
+// }
+
+// ======================== X ========================================
