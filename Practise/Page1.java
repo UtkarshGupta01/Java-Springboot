@@ -555,19 +555,21 @@
 
 // Maximum and minimum in an array
 
-import java.util.*;
+// import java.util.*;
+// public class Page1 {
+// public static void main(String[] args) {
+// Scanner input = new Scanner(System.in);
+// System.out.print("Enter the size of an array : ");
+// int arrSize = input.nextInt();
+// int arr[] = new int[arrSize];
+// System.out.print("Enter elements of array : ");
+// for (int i = 0; i < arr.length; i++) {
+// arr[i] = input.nextInt();
+// }
+// Arrays.sort(arr);
+// System.out.printf("Minimum element : %d and Maximum element : %d", arr[0],
+// arr[arr.length - 1]);
+// }
+// }
 
-public class Page1 {
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    System.out.print("Enter the size of an array : ");
-    int arrSize = input.nextInt();
-    int arr[] = new int[arrSize];
-    System.out.print("Enter elements of array : ");
-    for (int i = 0; i < arr.length; i++) {
-      arr[i] = input.nextInt();
-    }
-    Arrays.sort(arr);
-    System.out.printf("Minimum element : %d and Maximum element : %d", arr[0], arr[arr.length - 1]);
-  }
-}
+// ===============================================================================
