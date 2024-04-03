@@ -316,7 +316,7 @@
 // }
 // }
 
-// ===================================================================
+// ================================ X ===================================
 
 // Sum and average of all elements in an array
 
@@ -514,4 +514,23 @@
 
 // ====================================================================================
 
-//
+//sum and average of all elements in 2d array
+
+public class Page1 {
+
+  public static void main(String[] args) {
+    int a[][] = { { 2, 3, 4, 1 }, { 1, 2, 3, 4 } };
+    int sum = 0;
+    int count = 0;
+
+    for (int i = 0; i < a.length; i++) {
+      for (int j = 0; j < a[i].length; j++) {
+        sum += a[i][j];
+        count++;
+      }
+    }
+    double avg = (double) sum / count;
+    System.out.printf("Sum : %d ; Average : %.2f", sum, avg);
+
+  }
+}
