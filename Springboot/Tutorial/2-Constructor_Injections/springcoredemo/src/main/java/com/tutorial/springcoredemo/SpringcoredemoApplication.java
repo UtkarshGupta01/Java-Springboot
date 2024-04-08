@@ -1,13 +1,13 @@
-package com.tutorial.springOne;
+package com.tutorial.springcoredemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringOneApplication {
+public class SpringcoredemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringOneApplication.class, args);
+		SpringApplication.run(SpringcoredemoApplication.class, args);
 	}
 
 }

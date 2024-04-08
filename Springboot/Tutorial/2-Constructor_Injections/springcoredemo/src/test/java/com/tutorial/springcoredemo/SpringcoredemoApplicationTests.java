@@ -1,10 +1,10 @@
-package com.tutorial.springOne;
+package com.tutorial.springcoredemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringOneApplicationTests {
+class SpringcoredemoApplicationTests {
 
 	@Test
 	void contextLoads() {
