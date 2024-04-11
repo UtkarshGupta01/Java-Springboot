@@ -25,7 +25,7 @@ public class CruddemoApplication {
 	private void createMultipleStudents(StudentDAO studentDAO) {
 		System.out.println("Creating 3 Student objects...");
 		Student tempStudent1 = new Student("Sneha","Shrivastava","snehawish2@gmail.com");
-		Student tempStudent2 = new Student("Pritish","Singh","pritishsingh26@gmail.com");
+		Student tempStudent2 = new Student("Utkarsh","Gupta","ug53054@gmail.com");
 		Student tempStudent3 = new Student("Tanya","Rathore","tanrath1111@gmail.com");
 
 		System.out.println("Saving the studnt...");
@@ -33,7 +33,7 @@ public class CruddemoApplication {
 		studentDAO.save(tempStudent2);
 		studentDAO.save(tempStudent3);
 
-		System.out.println("3 Students saved with  Id : "+ tempStudent1.getId()+" "+tempStudent2.getId()+" "+tempStudent3.getId());
+		System.out.println("3 Students saved with  Id : "+ tempStudent1.getId()+", "+tempStudent2.getId()+", "+tempStudent3.getId());
 
 	}
 
