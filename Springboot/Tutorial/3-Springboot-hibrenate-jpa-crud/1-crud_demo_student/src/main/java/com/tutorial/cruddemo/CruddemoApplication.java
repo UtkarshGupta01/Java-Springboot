@@ -29,11 +29,11 @@ public class CruddemoApplication {
 
 			//queryForStudentsLastName(studentDAO);
 
-			//updateStudent(studentDAO);
+			updateStudent(studentDAO);
 
 			//deleteStudent(studentDAO);
 
-			deleteAllStudents(studentDAO);
+			//deleteAllStudents(studentDAO);
 		};
 	}
 
