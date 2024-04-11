@@ -31,8 +31,21 @@ public class CruddemoApplication {
 
 			//updateStudent(studentDAO);
 
-			deleteStudent(studentDAO);
+			//deleteStudent(studentDAO);
+
+			deleteAllStudents(studentDAO);
 		};
+	}
+
+	private void deleteAllStudents(StudentDAO studentDAO) {
+
+		System.out.println("Deleting all students...");
+
+		int numberOfRows = studentDAO.deleteAll();
+
+		System.out.println("Rows Deleted : " + numberOfRows);
+
+
 	}
 
 	private void deleteStudent(StudentDAO studentDAO) {
