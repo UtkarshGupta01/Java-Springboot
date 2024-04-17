@@ -1,6 +1,6 @@
 package com.demo.project.cruddemoproject.rest;
 
-import com.demo.project.cruddemoproject.dao.EmployeeDAO;
+
 import com.demo.project.cruddemoproject.entity.Employee;
 import com.demo.project.cruddemoproject.service.ServiceEmployee;
 import org.springframework.web.bind.annotation.*;
@@ -32,6 +32,16 @@ public class EmployeeRESTController {
         }
 
         return theEmployee;
+    }
+
+    @PostMapping("/employees")
+    public Employee addEmployee(@RequestBody Employee theEmployee){
+        theEmployee.setId(0);
+
+        Employee dbEmployee = serviceEmployee.save(theEmployee);
+
+        return dbEmployee;
+
     }
 
 }
