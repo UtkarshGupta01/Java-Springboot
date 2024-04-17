@@ -3,9 +3,7 @@ package com.demo.project.cruddemoproject.rest;
 import com.demo.project.cruddemoproject.dao.EmployeeDAO;
 import com.demo.project.cruddemoproject.entity.Employee;
 import com.demo.project.cruddemoproject.service.ServiceEmployee;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,6 +21,17 @@ public class EmployeeRESTController {
     @GetMapping("/employees")
     public List<Employee> findAll(){
         return serviceEmployee.findAll();
+    }
+
+    @GetMapping("/employees/{employeeid}")
+    public Employee findEmployee(@PathVariable int employeeid){
+        Employee theEmployee = serviceEmployee.findById(employeeid);
+
+        if(theEmployee ==null){
+            throw new RuntimeException("Employee not found for ID : " + employeeid);
+        }
+
+        return theEmployee;
     }
 
 }
