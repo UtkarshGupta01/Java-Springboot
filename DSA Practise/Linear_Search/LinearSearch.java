@@ -12,6 +12,10 @@ public class LinearSearch {
     int end = 6;
 
     int[][] arr1 = {{12,34,123},{-12,223,-6},{0,1,918},{-323,21,12}};
+
+    System.out.println(arr1.length);
+
+
     int min1 = searchMin1(arr1);
     System.out.println("Minimum value in 2D array : " + min1);
 
